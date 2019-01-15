@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.progetto.bra.worldbank.ChartActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottombar"
+        android:layout_below="@id/toolbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/line_chart"
+                android:padding="3dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="21sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/DL"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/max_slider_indicator_size"
+                    android:layout_marginBottom="@dimen/max_slider_indicator_size"
+                    android:background="@drawable/ic_download"
+                    android:contentDescription="@string/download" />
+
+                <ImageButton
+                    android:id="@+id/FULL_LINE"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_full"
+                    android:contentDescription="@string/download" />
+
+
+                <ImageButton
+                    android:id="@+id/SL"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_share_black_24dp"
+                    android:contentDescription="@string/download" />
+
+            </RelativeLayout>
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/linechart">
+            </com.github.mikephil.charting.charts.LineChart>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/barchart"
+                android:padding="3dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="21sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/DB"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/max_slider_indicator_size"
+                    android:layout_marginBottom="@dimen/max_slider_indicator_size"
+                    android:background="@drawable/ic_download"
+                    android:contentDescription="@string/download" />
+
+                <ImageButton
+                    android:id="@+id/FULL_BAR"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_full"
+                    android:contentDescription="@string/download" />
+
+                <ImageButton
+                    android:id="@+id/SB"
+                    android:layout_width="34dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_share_black_24dp"
+                    android:contentDescription="@string/download" />
+
+            </RelativeLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:id="@+id/barchart">
+            </com.github.mikephil.charting.charts.BarChart>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

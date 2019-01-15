@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="it.progetto.bra.worldbank.ChartActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/tvslider"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/slider"
+        android:layout_marginTop="72dp"
+        android:padding="3dp"
+        android:text="@string/yourcharts"
+        android:textSize="21sp" />
+
+    <ir.apend.slider.ui.Slider
+        android:id="@+id/slider"
+        android:layout_width="702dp"
+        android:layout_height="907dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        app:animateIndicators="true"
+        app:defaultIndicators="circle"
+        app:intervalSecond="5"
+        app:loopSlides="true" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/closeapp"
+        android:icon="@drawable/ic_close"
+        android:title="@string/value"
+        app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/world"
+        android:icon="@drawable/world_second"
+        android:title="@string/value"
+        app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/saved"
+        android:icon="@drawable/ic_saved"
+        android:title="@string/value"
+        app:showAsAction="always">
+    </item>
+
+</menu>
